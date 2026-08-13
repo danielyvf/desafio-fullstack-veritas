@@ -8,16 +8,18 @@ import (
 type Status string
 
 const (
-	StatusTodo       Status = "FAZER"
-	StatusInProgress Status = "EM_PROGRESSO"
-	StatusDone       Status = "CONCLUIDAS"
+	StatusTodo       Status = "TODO"
+	StatusInProgress Status = "IN_PROGRESS"
+	StatusDone       Status = "DONE"
 )
 
 type Task struct {
 	ID          string `json:"id"`
-	Title       string `json:"titulo"`
-	Description string `json:"descricao"`
+	Title       string `json:"title"`
+	Description string `json:"description"`
 	Status      Status `json:"status"`
+	CreatedAt   string `json:"createdAt,omitempty"`
+	UpdatedAt   string `json:"updatedAt,omitempty"`
 }
 
 func (t *Task) Validate() error {

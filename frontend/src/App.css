@@ -1,0 +1,155 @@
+.app-header {
+  display: flex;                   
+  justify-content: space-between;  
+  align-items: center;             
+  width: 100%;                     
+  padding: 1rem 0;                 
+  margin-bottom: 2rem;          
+}
+
+.titulo1 {
+  margin: 2rem;                       
+  font-size: 3rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.primeiro-btn {
+  padding: 1rem 1.2rem;
+  margin: 2rem;
+  font-size: 0.70rem;
+  font-weight: 300;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.kanban-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  align-items: start;
+}
+
+.kanban-column {
+  background-color: #16171D; 
+  border-radius: 12px;
+  padding: 1rem;
+  border: 1px solid #25282d;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px; 
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.column-header h2 {
+  font-size: 1.1rem;
+  font-weight: 200;
+  color: #fff;
+  margin: 0;
+}
+
+.task-count {
+  background-color: #cbd5e1;
+  color: #334155;
+  font-weight: bold;
+  font-size: 0.85rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.column-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.task-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.empty-state {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  padding: 2rem 0;
+  border: 2px dashed #cbd5e1;
+  border-radius: 8px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: rgb(16, 15, 19);
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}

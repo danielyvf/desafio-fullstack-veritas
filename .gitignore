@@ -1,0 +1,26 @@
+# Executáveis do Go (binários compilados)
+/backend/*.exe
+/backend/*.exe block
+/backend/*.dll
+/backend/*.so
+/backend/*.dylib
+/backend/main
+
+# Dependências
+/frontend/node_modules/
+/frontend/dist/
+/frontend/build/
+
+# Variáveis de Ambiente
+.env
+.env.local
+*.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# Arquivos do Sistema e da IDE
+.DS_Store
+.vscode/
+.idea/
