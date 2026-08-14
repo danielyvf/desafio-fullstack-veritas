@@ -21,7 +21,7 @@ Este projeto consiste em uma aplicação full stack para gerenciamento de tarefa
 *  Go (versão 1.18 ou superior)
 *  Node.js (versão 18 ou superior) e npm
 
-## Executando o Backend (Go)
+## Executando o Backend
 
 1. Navegue até o diretório do backend:
    ```bash
@@ -38,6 +38,24 @@ Este projeto consiste em uma aplicação full stack para gerenciamento de tarefa
    ```bash
    go build .
    ```
+
+## Executando o Frontend
+
+1. Navegue até o diretório do frontend:
+   ```bash
+   cd frontend
+   ```
+
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+   * O servidor estará rodando na porta `8080` (`http://localhost:5173`).
 
 ---
 
